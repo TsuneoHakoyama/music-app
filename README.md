@@ -1,12 +1,25 @@
-# React + Vite
+# 音楽検索アプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###### 概要
+###### Spotify APIを利用して音楽検索ができる。
+###### トップ画面
+![トップ画面のスクリーンショット](Top-page.png?raw=true)
 
-Currently, two official plugins are available:
+## 機能一覧
+###### Top-pageにアクセスするとSpotifyのpopular songsが表示できる
+###### 検索欄にキーワードを入力し、Spotify APIを利用して楽曲を検索することができる
+###### 検索結果はpaginationを使って表示される
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 使用技術
+###### axios: 1.9.0
+###### React: 19.1.0
+###### React-dom: 19.1.0
+###### vite: 6.3.5
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 環境構築
+###### 1. $ git clone git@github.com:TsuneoHakoyama/music-app.git
+###### 2. $ cd music-app
+###### 3. $ cp .env.develop .env
+###### 4. $ npm install
+###### 5. $ npm run dev
+###### 6. http://localhost:5173にアクセス
